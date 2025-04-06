@@ -1,0 +1,70 @@
+
+.navContainer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo-container{
+  /* adds some margin to the left of the logo */
+  margin-left: 15px;
+  
+}
+.logo{
+  /* sets the font of the logo to lobster */
+  font-family: 'Lobster', sans-serif;
+  /* sets the size of the logo */
+  font-size: 20px;
+  /* adds some space between each letter in the logo */
+  letter-spacing: 1.5px;
+  /* sets the color of the logo */
+  color: #e0dbd6;
+
+  /* adds a shadow to the logo */
+  /* adds a shadow to the logo with four different layers for different depths and colors */
+  text-shadow: 1px 0px 5px #333, 0 0 2px #333, 0 0 0px #333, 5px 0 10px #333;
+  /* text-shadow: 5px 5px 0 #333, 0 0 50px #333, 0 0 30px #333, 0 */
+}
+
+.navList{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* justify-content: space-between;
+  */
+  align-items: center;
+  gap: 20px;
+}
+ul li{
+  color: #e0dbd6;
+  font-family: 'Lobster', sans-serif;
+  font-size: 15px;
+}
+.get-user{
+  display: flex;
+  gap: 10px;
+  align-items: center
+}
+
+.login, .sign-up{
+  padding: 10px 20px;
+  border: none;
+}
+.login{
+  background-color: rgba(255, 255, 255, 0.0);
+  color: #fff;
+}
+
+.sign-up{
+  background-color: #ff7e5f;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-up:hover{
+  background-color: #feb47b;
+  transition: 0.5s ease-in-out;
+  color: #ff7e5f;
+}

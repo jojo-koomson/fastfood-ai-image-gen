@@ -1,0 +1,392 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn, .signup-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.signup-btn {
+  background: white;
+  color: #ff7e5f;
+}
+
+.parentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  min-height: 30vh;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 25px;
+  width: 500px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-btn {
+  padding: 8px 20px;
+  background-color: white;
+  color: #ff7e5f;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #ff7e5f;
+  color: white;
+}
+
+.add-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ingredients-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.ingredient-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-card h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-underline {
+  width: 50px;
+  height: 3px;
+  background: #ff7e5f;
+  margin: 10px auto;
+}
+
+.cook-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.main-btn {
+  padding: 12px 30px;
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+.main-btn:hover {
+  background: #ff6b4a;
+  transform: translateY(-2px);
+}
+
+.main-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message button {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.generated-image {
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.image-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset-btn {
+  background: white;
+  color: #ff7e5f;
+  border: 2px solid #ff7e5f;
+}
+
+.reset-btn:hover {
+  background: #ff7e5f;
+  color: white;
+}
+
+.food-info {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.generated-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.generator-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #202124;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #5f6368;
+}
+
+.input-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.settings-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #3c4043;
+  font-weight: 500;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background: white;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #1765cc;
+}
+
+button:disabled {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+button.loading {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+.tips {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.tips h3 {
+  margin-top: 0;
+  color: #202124;
+}
+
+.tips ul {
+  padding-left: 1.25rem;
+  color: #5f6368;
+}
+
+@media (max-width: 600px) {
+  .generator-container {
+    padding: 1rem;
+  }
+  
+  .settings-panel {
+    grid-template-columns: 1fr;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .actions button {
+    max-width: none;
+  }
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.ingredient-item {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.cook-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cook-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+}

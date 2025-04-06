@@ -1,9 +1,15 @@
-import './App.css'
+import { Fragment } from "react";
+import "./App.css";
+import Parent from "./components/Parent";
+import Navbar from "./components/Navbar";
 
-export default function App() {
+function App() {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit
-    </main>
-  )
+    <Fragment>
+      <Navbar />
+      <Parent />
+    </Fragment>
+  );
 }
+
+export default App;
